@@ -9,11 +9,12 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.boardgamearena.com/*"
+                "*://*.boardgamearena.com/*/jaipur*"
             ],
             "js": [
                 "jaipur.js"
-            ]
+            ],
+            "run_at": "document_idle"
         }
     ]
 }
